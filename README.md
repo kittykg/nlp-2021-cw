@@ -56,3 +56,5 @@ The first 4 are flags for our dataset extension tricks. The base training set co
 `VAL_STEPS = 100` and `BATCH_SIZE = 32` are fixed in all experiments. `NUM_EPOCHS` varied during our experiments. Most of the models are trained with epoch of 6, but for model with larger training set we reduced the number of epochs. A full experiments record with their individual flags and epoch number could be found in [this sheet](https://docs.google.com/spreadsheets/d/14Z2V2v15gwpxJ5fGwdaLdaRUGhNI3KHaVu-nbzSCPvk/edit?usp=sharing).
 
 ## Non-pre-trained Approaches
+
+All instructions for running all types of non-pre-trained approaches are given at the top of `Non-pre-trained.ipynb`, which also contains all the code for the methods/experiments.
