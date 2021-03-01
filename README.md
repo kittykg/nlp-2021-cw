@@ -20,6 +20,28 @@ This repo contains our experiments for Subtask 1 of SemEval-2020 Task 7.
 
 ### GloVe Based Model
 
+`glove.ipynb` contains the GLOVE embeding tests with the BiLSTM model.
+
+This single notebook handels all tests by editing the config in the first cell of the notebook.
+
+In the config these parameters can be set to `True` or `False` in any combination to achieve the appropriate results:
+```
+# Parameters
+TWITTER = True
+ADD_ORIGINAL_DATA = True
+REMOVE_STOPWORDS = True
+```
+The parameters represent:
+- `TWITTER`: 
+  - `True`: Use the Glove.Twitter embedings 
+  - `False`: Use the Globe Base embedings
+- `ADD_ORIGINAL_DATA`:
+  - `True`: Extend dataset with unedited data and label 0
+  - `False`: Do not extend the dataset (use only edited data)
+- `REMOVE_STOPWORDS`
+  - `True`: Remove stopwrods from dataset
+  - `False`: Do not remove stopwrods from dataset
+
 ### Transformer Based Model
 
 `BERT.ipynb` contains the BERT based regression model, and `Roberta.ipynb` contains the RoBERTa based regression model.
